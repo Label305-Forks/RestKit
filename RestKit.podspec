@@ -59,7 +59,7 @@ Pod::Spec.new do |s|
 
     os.subspec 'JSON' do |jos|
       jos.source_files = 'Code/Support/Parsers/JSON/RKJSONParserJSONKit.{h,m}'
-      jos.dependency     'JSONKit', '>= 1.5pre'
+      jos.dependency     'JSONKit', :git => 'https://github.com/tscheepers/JSONKit.git'
       jos.dependency     'RestKit/ObjectMapping/Core'
     end
 
