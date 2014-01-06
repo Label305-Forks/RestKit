@@ -20,9 +20,7 @@
 
 #import <CommonCrypto/CommonDigest.h>
 #import "NSData+RKAdditions.h"
-#import "RKFixCategoryBug.h"
 
-RK_FIX_CATEGORY_BUG(NSData_RKAdditions)
 
 @implementation NSData (RKAdditions)
 

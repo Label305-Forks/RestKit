@@ -12,7 +12,6 @@
 #import "NSManagedObject+ActiveRecord.h"
 #import "RKManagedObjectStore.h"
 #import "RKLog.h"
-#import "RKFixCategoryBug.h"
 #import "NSEntityDescription+RKAdditions.h"
 
 // Set Logging Component
@@ -23,8 +22,6 @@ static NSUInteger const kActiveRecordDefaultBatchSize = 10;
 static NSNumber *defaultBatchSize = nil;
 
 static NSManagedObjectContext *defaultContext = nil;
-
-RK_FIX_CATEGORY_BUG(NSManagedObjectContext_ActiveRecord)
 
 @implementation NSManagedObjectContext (ActiveRecord)
 
@@ -47,8 +44,6 @@ RK_FIX_CATEGORY_BUG(NSManagedObjectContext_ActiveRecord)
 }
 
 @end
-
-RK_FIX_CATEGORY_BUG(NSManagedObject_ActiveRecord)
 
 @implementation NSManagedObject (ActiveRecord)
 
