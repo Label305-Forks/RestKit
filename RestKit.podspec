@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
   s.author       =  { 'Blake Watters' => 'blakewatters@gmail.com' }
   s.source       =  { :git => 'https://github.com/RestKit/RestKit.git', :tag => 'v0.10.3' }
   s.license      =  'Apache License, Version 2.0'
+  s.requires_arc = false
 
   s.source_files =  'Code/RestKit.h'
 
